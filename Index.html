@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etch-A-Sketch </title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Etch-A-Sketch</h1>
+
+    <div id = "main-container">
+
+      <div id="container"></div>
+
+      <div id ="button-sizes-container">
+        <button class = 'button-sizes'  type = 'button'  onclick = 'resizeLarge(numberOfColumnsAndRows,numberOfColumnsAndRows);'>
+            LARGE </button>
+        <button class = 'button-sizes' type = 'button'  onclick = 'resizeMedium(numberOfColumnsAndRows,numberOfColumnsAndRows);'> 
+            MED </button>
+        <button class = 'button-sizes'  type = 'button'  onclick = 'resizeSmall(numberOfColumnsAndRows,numberOfColumnsAndRows);'> 
+            SMALL </button>
+      </div> 
+   
+      <div id = "button-utilities-container">  
+        <button class = 'button-utilities'    type = 'button' onclick = 'addEventListener3(), chageColorToRed();'>RED</button>
+        <button class = 'button-utilities'   type = 'button' value = 'clickme' onclick = 'print();'>PRINT</button>  
+        <button class = 'button-utilities'  type = 'button' onclick = 'addEventListener4(), chageColorToWhite();'>WHITE</button>
+        <button class = 'button-utilities' type = 'button' value = 'clickme' onclick = 'resetColor();'>RESET</button>
+        <button class = 'button-utilities'  type = 'button' onclick = 'addEventListener2(), chageColorToBlack();'>BLACK</button>  
+      </div>
+    
+             
+      <script src = 'my_script.js'> </script>
+  
+    
+</body>
+</html>
